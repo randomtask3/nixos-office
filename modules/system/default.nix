@@ -1,10 +1,10 @@
 {
   imports = [
-    ./bootloader.nix
+    #./bootloader.nix
     ./networking.nix
     ./packages.nix
     ./system.nix
-    ./users.nix
+    #./users.nix
     ./utilities.nix
   ];
 }

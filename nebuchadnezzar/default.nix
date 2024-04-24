@@ -3,9 +3,10 @@
   ... 
 }:{
     imports = [
-        ./hardware-configuration.nix
+        #./hardware-configuration.nix
         #./filesystems.nix
         ../modules
+        <nixpkgs/nixos/modules/installer/virtualbox-demo.nix>
     ];
     disabledModules = [
         #../../modules/work

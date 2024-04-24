@@ -3,6 +3,8 @@
   ... 
 }:{
     imports = [
-        #./filesystems.nix
+        ./server
+        ./system
+        ./scripts
     ];
 }
