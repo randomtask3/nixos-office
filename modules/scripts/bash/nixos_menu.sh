@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-config_path="/home/demo/NixOS"
+config_path="/home/morpheus/NixOS"
 menu_options=( 1 "nixos-rebuild" 2 "nix-flake-update" 3 "nix-collect-garbage" 4 "Quit")
 host_name=$(hostname)
 command_array=("" "sudo nixos-rebuild switch --flake $config_path#$host_name" "cd $config_path; sudo nix flake update" "sudo nix-collect-garbage" "break")
