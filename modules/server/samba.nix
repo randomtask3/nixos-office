@@ -12,8 +12,8 @@
     '';
 
     shares = {
-      matrix = {
-        path = "/home/morpheus/matrix";
+      Matrix = {
+        path = "/home/morpheus/Matrix";
         browseable = "no";  # note: each home will be browseable; the "homes" share will not.
         "read only" = "no";
         "guest ok" = "no";

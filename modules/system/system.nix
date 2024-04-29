@@ -3,10 +3,6 @@
   pkgs,
   ... 
 }:{
-  services.xserver.enable = true;
-  services.desktopManager.plasma6.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
     # stalled-download-timeout = 1000;
