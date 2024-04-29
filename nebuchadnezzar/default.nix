@@ -3,8 +3,8 @@
   ... 
 }:{
     imports = [
-        #./hardware-configuration.nix
-        #./filesystems.nix
+        ./hardware-configuration.nix
+        ./filesystems.nix
         ../modules
     ];
     disabledModules = [

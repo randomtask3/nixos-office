@@ -3,6 +3,7 @@
   ... 
 }:{
     imports = [
+        ./desktop
         ./server
         ./system
         ./scripts

@@ -1,8 +1,8 @@
 { description = "Flake for office server machine";
 
     inputs = {
-        nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-23.11";
-        nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+        nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+        nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
         home-manager.url = "github:nix-community/home-manager";
         home-manager.inputs.nixpkgs.follows = "nixpkgs";
         catppuccin.url = "github:catppuccin/nix";
@@ -21,7 +21,7 @@
                 system = "x86_64-linux";
                 specialArgs = {
                     inherit inputs;
-                    pkgs-stable = import nixpkgs-stable {
+                    pkgs-unstable = import nixpkgs-unstable {
                         system = "x86_64-linux";
                         config.allowUnfree = true;
                     };
